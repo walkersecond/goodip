@@ -41,7 +41,7 @@ with open('ip.txt', 'w') as file:
                 count += 1
                 # 从第6个开始，只取偶数，最多16个
                 if count >= 1 and (count % 2 == 0) and written < 16:
-                    file.write(ip + '#优选 ' + count + '\n')
+                    file.write(f"{ip}#优选 {count}\n")
                     written += 1
 
 print('IP地址已保存到 ip.txt 文件中。')
