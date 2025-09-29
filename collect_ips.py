@@ -39,10 +39,10 @@ with open('ip.txt', 'w') as file:
 
             for ip in ip_matches:
                 count += 1
-                # 从第6个开始，只取偶数，最多16个
+                # 从第6个开始，只取偶数，最多10个
                 #if count >= 1 and (count % 2 == 0) and written < 8:
-                if count >= 1 and written <= 8:
-                    file.write(f"{ip}#优选 {written+1}\n")
+                if count >= 1 and written <= 9:
+                    file.write(f"{ip}#优选 {written+1} ({ip})\n")
                     written += 1
 
 print('IP地址已保存到 ip.txt 文件中。')
