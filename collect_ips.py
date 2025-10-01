@@ -42,7 +42,7 @@ with open('ip.txt', 'w') as file:
                 # 从第6个开始，只取偶数，最多10个
                 #if count >= 1 and (count % 2 == 0) and written < 8:
                 if count >= 1 and written <= 7:
-                    file.write(f"{ip}#优选 {written+1} ({ip})\n")
+                    file.write(f"{ip}#优选c {written+1} ({ip})\n")
                     written += 1
 
 print('IP地址已保存到 ip.txt 文件中。')
