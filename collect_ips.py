@@ -5,7 +5,7 @@ import os
 
 # 目标URL列表
 urls = [
-    'https://ip.164746.xyz'
+    'https://api.uouin.com/cloudflare.html'
 ]
 
 urls_table = [
@@ -41,7 +41,7 @@ with open('ip.txt', 'w') as file:
                 count += 1
                 # 从第6个开始，只取偶数，最多10个
                 #if count >= 1 and (count % 2 == 0) and written < 8:
-                if count >= 1 and written <= 9:
+                if count >= 1 and written <= 7:
                     file.write(f"{ip}#优选 {written+1} ({ip})\n")
                     written += 1
 
