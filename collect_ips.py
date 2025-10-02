@@ -39,9 +39,9 @@ with open('ip.txt', 'w') as file:
 
             for ip in ip_matches:
                 count += 1
-                # 从第6个开始，只取偶数，最多10个
+                # 从第6个开始，只取偶数，最多4个
                 #if count >= 1 and (count % 2 == 0) and written < 8:
-                if count >= 1 and written <= 7:
+                if count >= 1 and written < 4:
                     file.write(f"{ip}#优选c {written+1} ({ip})\n")
                     written += 1
 
